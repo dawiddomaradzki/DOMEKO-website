@@ -3,11 +3,35 @@
 @import "_variables";
 @import "modules/hello.scss";
 
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
-  background: $wtf;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: $white;
+  color: black;
+  display: block;
   min-height: 100vh;
+}
+
+.header {
+  
+  &__wrapper {
+}
+}
+
+.navigation {
+ 
+  &__list {
+    list-style-type: none;
+    display: inline-flex;
+  }
 }
