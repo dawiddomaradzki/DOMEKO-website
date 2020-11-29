@@ -2,6 +2,7 @@
 
 @import "_variables";
 @import "modules/hello.scss";
+@import url('https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,700&display=swap');
 
 html {
   box-sizing: border-box;
@@ -20,18 +21,34 @@ body {
   color: black;
   display: block;
   min-height: 100vh;
+  font-family: 'Unna', serif;
 }
 
 .header {
-  
+  padding: 0 2rem;
+  // align-items: center;
+
   &__wrapper {
-}
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    align-self: center;
+  }
 }
 
 .navigation {
- 
+  margin-right: 3rem;
   &__list {
     list-style-type: none;
     display: inline-flex;
+  }
+
+  &__link {
+    padding-right: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
   }
 }
