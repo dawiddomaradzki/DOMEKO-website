@@ -1,0 +1,28 @@
+.header {
+  padding: 0 2rem;
+  // align-items: center;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+  }
+
+  &__logo {
+    align-self: center;
+  }
+}
+
+.navigation {
+  &__list {
+    list-style-type: none;
+    display: inline-flex;
+  }
+
+  &__link {
+    padding-right: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+  }
+}

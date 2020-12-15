@@ -1,0 +1,58 @@
+.footer {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 32px;
+}
+
+.information {
+&__title {
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+  &__list {
+		list-style-type: none;
+		padding: 0;
+		
+  }
+
+  &__element {
+    font-size: 1.5rem;
+		line-height: 3rem;
+		padding-left: 3rem;
+		position: relative;
+  }
+
+  &__call {
+    &::before {
+			content: "";
+			display: block;
+			height: 2rem;
+			width: 2rem;
+			left: 0;
+			top: 0.5rem;
+			position: absolute;
+			background-size: contain;
+			background-image: url("../assets/icons/call.svg");
+    }
+  }
+}
+
+// &::before {
+//       content: "";
+//       display: block;
+//       position: absolute;
+//       top: 0.6875rem;
+//       left: 0;
+//       height: 1.125rem;
+//       width: 1.125rem;
+//       background-size: contain;
+//       background-image: url("../assets/img/okgreen.svg");
+//       .type__purple & {
+//         background-image: url("../assets/img/okpurple.svg");
+//       }
+//       .type__blue & {
+//         background-image: url("../assets/img/okblue.svg");
+//       }
