@@ -1,70 +1,84 @@
 .footer {
   background: black;
   color: white;
-  display: flex;
-  justify-content: space-between;
-  padding: 32px 32px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 32px;
+  }
+
+  &__photo {
+		text-align: center;
+		// display: flex;
+		// // justify-content: center;
+		// // align-items: center;
+		// flex-direction: column;
+  }
 }
 
 .information {
-&__title {
-	font-weight: 700;
-	letter-spacing: 2px;
-}
+  &__title {
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
 
   &__list {
-		list-style-type: none;
-		padding: 0;
-		
+    list-style-type: none;
+    padding: 0;
   }
 
   &__element {
     font-size: 1.5rem;
-		line-height: 3rem;
-		padding-left: 3rem;
-		position: relative;
+    line-height: 3rem;
+    padding-left: 3rem;
+    position: relative;
   }
 
   &__call {
     &::before {
-			background-image: url("../assets/icons/call.svg");
-		}
-	}
-
-	&__email {
-    &::before {
-			background-image: url("../assets/icons/email.svg");
-		}
-	}
-	
-	&__facebook {
-    &::before {
-			background-image: url("../assets/icons/facebook.svg");
-		}
-	}
-	
-	&__opening {
-    &::before {
-			background-image: url("../assets/icons/opening.svg");
-		}
-	}
-	
-	&__location {
-    &::before {
-			background-image: url("../assets/icons/location.svg");
-		}
+      background-image: url("../assets/icons/call.svg");
+    }
   }
 
-	&__email, &__call, &__facebook, &__opening, &__location {
+  &__email {
     &::before {
-			content: "";
-			display: block;
-			height: 2rem;
-			width: 2rem;
-			left: 0;
-			top: 0.5rem;
-			position: absolute;
-			background-size: contain;
-		}
+      background-image: url("../assets/icons/email.svg");
+    }
+  }
+
+  &__facebook {
+    &::before {
+      background-image: url("../assets/icons/facebook.svg");
+    }
+  }
+
+  &__opening {
+    &::before {
+      background-image: url("../assets/icons/opening.svg");
+    }
+  }
+
+  &__location {
+    &::before {
+      background-image: url("../assets/icons/location.svg");
+    }
+  }
+
+  &__email,
+  &__call,
+  &__facebook,
+  &__opening,
+  &__location {
+    &::before {
+      content: "";
+      display: block;
+      height: 2rem;
+      width: 2rem;
+      left: 0;
+      top: 0.5rem;
+      position: absolute;
+      background-size: contain;
+    }
   }
 }

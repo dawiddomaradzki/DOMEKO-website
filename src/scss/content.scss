@@ -1,0 +1,21 @@
+.content {
+  background: grey;
+  padding: 0 2rem;
+
+  &__walk {
+    display: block;
+    text-align: center;
+
+    &--frame {
+      padding: 2rem 0;
+    }
+  }
+}
+
+.header {
+  text-align: center;
+  margin: 0;
+  padding: 1.5rem 0;
+  border-bottom: 2px solid black;
+}
+
