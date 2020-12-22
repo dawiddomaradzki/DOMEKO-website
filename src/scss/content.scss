@@ -5,17 +5,35 @@
   &__walk {
     display: block;
     text-align: center;
+  }
 
-    &--frame {
-      padding: 2rem 0;
-    }
+  &__offer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
   }
 }
 
-.header {
+.headers {
   text-align: center;
   margin: 0;
   padding: 1.5rem 0;
   border-bottom: 2px solid black;
+  margin-bottom: 2rem;
 }
 
+.services {
+  display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+  &__wrapper {
+    max-width: 440px;
+  }
+  &__header {
+  }
+
+  &__description {
+  }
+}
