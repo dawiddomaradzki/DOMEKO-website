@@ -1,5 +1,6 @@
 .content {
-  background: grey;
+  background: #f9f9fc;
+  color: #333;
   padding: 0 2rem;
 
   &__walk {
@@ -24,10 +25,10 @@
 
 .services {
   display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
   &__wrapper {
     max-width: 440px;
   }
