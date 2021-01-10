@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
+    <title>DOMEKO: Salon Łazienek</title>
     <meta name="description" content="Your project description" />
     <!-- Title -->
     <meta property="og:title" content="" />
@@ -40,9 +40,20 @@
       </div>
     </header>
 
-    <div class="wrapper">
-      <div class="wrapper__image"></div>
-    </div>
+    <section class="imgSection">
+      <div class="imgSection__wrapper">
+        <div class="imgSection__wrapper--image"></div>
+      </div>
+      <article class="imgSection__article">
+        <h2 class="imgSection__article--header">Domeko</h2>
+        <p class="imgSection__article--paragraph">
+          Domeko to salon okien, drzwi oraz łazienek zlokalizowany we
+          Włoszczowie. Dzięki szerokiej gamie produktów w naszej ofercie oraz
+          doświadczonych pracownikach, wspólnie urządzimy wymarzone wnętrze
+          Twojego domu.
+        </p>
+      </article>
+    </section>
 
     <section class="content">
       <h1 class="headers">W salonie oferujemy</h1>
@@ -62,8 +73,8 @@
         <div class="services">
           <div class="services__wrapper">
             <img src="../assets/img/visualization.png" alt="visualisation" />
-            <h2>Wizualizacje łazienek</h2>
-            <p>
+            <h2 class="services__header">Wizualizacje łazienek</h2>
+            <p class="services__description">
               Wykonujemy wizualizacje łazienek na życzenie klienta. Dzięki nim w
               łatwy sposób wyobrazisz sobie, jak dobrane przez nas komponenty
               będą ze sobą współgrać w końcowym projekcie.
@@ -73,8 +84,8 @@
         <div class="services">
           <div class="services__wrapper">
             <img src="../assets/img/door.png" alt="door" />
-            <h2>Okna i drzwi</h2>
-            <p>
+            <h2 class="services__header">Okna i drzwi</h2>
+            <p class="services__description">
               W naszym salonie znajdą Państwo wiele modeli okien oraz drzwi
               zarówno tych zawnętrznych jak i wewnętrznych.
             </p>
@@ -83,23 +94,22 @@
         <div class="services">
           <div class="services__wrapper">
             <img src="../assets/img/fireplace.png" alt="fireplace" />
-            <h2>Wyposażenie wnętrz</h2>
-            <p>
+            <h2 class="services__header">Wyposażenie wnętrz</h2>
+            <p class="services__description">
               W salonie oferujemy również różnego rodzaju wyposażenie wnętrz
               takich jak: kominki, materiały wykończeniowe wnętrz coś tam i coś
               tam i nie tylko.
             </p>
           </div>
         </div>
-
       </article>
       <h1 class="headers">Wirtualny spacer po naszym salonie</h1>
       <article class="content__walk">
         <div class="content__walk--frame">
           <iframe
             src="https://www.google.com/maps/embed?pb=!4v1608566888611!6m8!1m7!1s1COBCW09LqAAAAAGOvVirQ!2m2!1d50.8580986659624!2d19.96949833474616!3f241.53!4f-12.219999999999999!5f0.7820865974627469"
-            width="1000"
-            height="600"
+            width="100%"
+            height="600px"
             frameborder="0"
             style="border: 1px solid black"
             allowfullscreen=""
@@ -137,7 +147,7 @@
         </article>
 
         <article class="information">
-          <h2>LOKALIZACJA</h2>
+          <h2 class="information__title">LOKALIZACJA</h2>
           <ul class="information__list">
             <li class="information__element information__location">
               ul. Przedborska 45
@@ -146,8 +156,12 @@
           </ul>
         </article>
       </div>
-      <div class="footer__photo">
-        <img src="../assets/img/Domeko_bialy.svg" alt="Domeko footer" />
+      <div class="footer__photoWrapper">
+        <img
+          class="footer__photoWrapper--line"
+          src="../assets/img/Domeko_bialy20px.svg"
+          alt="Domeko footer"
+        />
       </div>
     </section>
   </body>
