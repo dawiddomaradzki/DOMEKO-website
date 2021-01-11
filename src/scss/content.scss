@@ -6,7 +6,6 @@
   &__walk {
     display: block;
     text-align: center;
-    padding-top: 1.5rem;
   }
 
   &__offer {
@@ -20,10 +19,19 @@
 
 .headers {
   text-align: center;
-  margin: 0;
+  font-size: 2rem;
+  font-weight: 400;
   padding: 0 0 1rem;
   border-bottom: 2px solid #c39f76;
-  margin-bottom: 2rem;
+
+  &__offer {
+    margin: 1rem 0 3rem;
+  }
+
+  &__walk {
+        margin: 4rem 0 3rem;
+
+  }
 }
 
 .services {
@@ -38,6 +46,7 @@
     max-width: 440px;
   }
   &__header {
+    font-weight: 500;
     &::after {
       display: block;
       margin: 1.5rem auto 2rem auto;
@@ -52,5 +61,6 @@
   &__description {
     max-width: 400px;
     margin: 0 auto;
+    line-height: 1.5rem;
   }
 }

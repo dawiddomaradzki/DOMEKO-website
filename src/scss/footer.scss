@@ -20,6 +20,11 @@
 }
 
 .information {
+  &__noStyle {
+    text-decoration: none;
+    color: inherit;
+  }
+
   &__title {
     font-weight: 400;
     font-size: 1.25rem;
