@@ -17,23 +17,23 @@
       content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
     />
   </head>
-  <body>
+  <body id="top">
     <header class="header">
       <div class="header__wrapper">
-        <a class="header__logo" href="" title="top of site">
+        <a class="header__logo" href="#top"  title="top of site">
           <img src="../assets/img/Domeko_czarny32px.svg" alt="DOMEKO logo" />
         </a>
 
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__list">
-              <a class="navigation__link">Oferta</a>
+              <a href="#content" class="navigation__link">Oferta</a>
             </li>
             <li class="navigation__list">
-              <a class="navigation__link">Galeria</a>
+              <a href="gallery.html" class="navigation__link">Galeria</a>
             </li>
             <li class="navigation__list">
-              <a class="navigation__link">Kontakt</a>
+              <a href="#footer" class="navigation__link">Kontakt</a>
             </li>
           </ul>
         </nav>
@@ -47,7 +47,7 @@
       <article class="imgSection__article">
         <h2 class="imgSection__article--header">Domeko</h2>
         <p class="imgSection__article--paragraph">
-          Domeko to salon okien, drzwi oraz łazienek zlokalizowany we
+          Domeko to centrum budowlane zlokalizowane we
           Włoszczowie. Dzięki szerokiej gamie produktów w naszej ofercie oraz
           doświadczonych pracownikach, wspólnie urządzimy wymarzone wnętrze
           Twojego domu.
@@ -55,7 +55,7 @@
       </article>
     </section>
 
-    <section class="content">
+    <section class="content" id="content">
       <h1 class="headers headers__offer">W salonie oferujemy</h1>
       <article class="content__offer">
         <div class="services">
@@ -120,7 +120,7 @@
       </article>
     </section>
 
-    <section class="footer">
+    <section class="footer" id="footer">
       <div class="footer__container">
         <article class="information">
           <h2 class="information__title">KONTAKT</h2>
@@ -157,9 +157,9 @@
           <h2 class="information__title">LOKALIZACJA</h2>
           <ul class="information__list">
             <li class="information__element information__location">
-              ul. Przedborska 45
+              <a href="https://goo.gl/maps/fjd2s9bmYHuYsVnN9" target="blank" class="information__noStyle">ul. Przedborska 45</a> 
             </li>
-            <li class="information__element">29-100 Włoszczowa</li>
+            <li class="information__element"><a href="https://goo.gl/maps/fjd2s9bmYHuYsVnN9" target="blank" class="information__noStyle">29-100 Włoszczowa</a></li>
           </ul>
         </article>
       </div>
