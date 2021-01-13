@@ -43,6 +43,12 @@
     position: relative;
   }
 
+  &__hover {
+    &:hover {
+       color: #c39f76;
+    }
+  }
+
   &__call {
     &::before {
       background-image: url("../assets/icons/call.svg");
@@ -53,18 +59,21 @@
     &::before {
       background-image: url("../assets/icons/email.svg");
     }
+
   }
 
   &__facebook {
     &::before {
       background-image: url("../assets/icons/facebook.svg");
     }
+    
   }
 
   &__opening {
     &::before {
       background-image: url("../assets/icons/opening.svg");
     }
+
   }
 
   &__location {
@@ -89,4 +98,14 @@
       background-size: contain;
     }
   }
+
+  &__email,
+  &__call,
+  &__facebook {
+    &:hover {
+      color: #c39f76;
+    }
+  }
+
+
 }
