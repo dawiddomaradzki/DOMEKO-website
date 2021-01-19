@@ -1,0 +1,17 @@
+.gallery {
+  margin: 0 auto;
+  padding: 5.5rem 0 2rem;
+  text-align: center;
+  background: rgb(238, 238, 238);
+}
+
+.gallery img {
+    padding: 1rem;
+    transition: 0.5s;
+}
+
+.gallery img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
