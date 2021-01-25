@@ -6,12 +6,10 @@
 }
 
 .gallery img {
-    padding: 1rem;
-    transition: 0.5s;
+  padding: 1rem;
 }
 
 .gallery img:hover {
-    filter: grayscale(100%);
-    transform: scale(1.1);
+  filter: grayscale(100%);
+  transform: scale(1.05);
 }
-

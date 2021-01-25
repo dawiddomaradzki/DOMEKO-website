@@ -1,7 +1,6 @@
 @import "~normalize.css";
 
 @import "_variables";
-@import "modules/hello.scss";
 @import "navigation.scss";
 @import "content";
 @import "footer.scss";
@@ -39,9 +38,7 @@ body {
     &--image {
       background-image: url(../assets/img/Domeko_outside.jpg);
       background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center 20%;
-      height: 650px;
+      height: 100vh;
     }
   }
 
