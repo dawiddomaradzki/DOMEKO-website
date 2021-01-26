@@ -6,6 +6,7 @@ module.exports = {
   entry: {
     index: "./src/js/index.js",
     gallery: "./src/js/gallery.js",
+    lightbox: "./src/js/lightbox-plus-jquery.min.js",
   },
   output: {
     filename: "[name].[hash:8].js",
@@ -67,9 +68,7 @@ module.exports = {
         {
           from: "public",
           globOptions: {
-            ignore: [
-              '**/*.DS_Store'
-            ],
+            ignore: ["**/*.DS_Store"],
           },
         },
       ],
@@ -85,7 +84,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/gallery.html",
       inject: true,
-      chunks: ["index", "gallery"],
+      chunks: ["index", "gallery", "lightbox"],
       filename: "gallery.html",
     }),
   ],
