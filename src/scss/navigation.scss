@@ -1,6 +1,6 @@
 .header {
   position: fixed;
-  background: #ffffff;
+  background: $white;
   width: 100%;
   z-index: 100;
 
@@ -30,7 +30,7 @@
     color: inherit;
 
     &:hover {
-      color: #c39f76;
+      color: $twine;
     }
   }
 }

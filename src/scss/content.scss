@@ -1,6 +1,6 @@
 .content {
-  background: #f9f9fc;
-  color: #343434;
+  background: $whisper;
+  color: $mineShaft;
   padding: 3rem 2rem;
 
   &__walk {
@@ -22,7 +22,7 @@
   font-size: 2rem;
   font-weight: 400;
   padding: 0 0 1rem;
-  border-bottom: 2px solid #c39f76;
+  border-bottom: 2px solid $twine;
 
   &__offer {
     margin: 1rem 0 3rem;
@@ -39,7 +39,7 @@
   align-content: center;
   align-items: center;
   flex-flow: column wrap;
-  background: rgb(238, 238, 238);
+  background: $gallery;
   padding: 1rem 0;
 
   &__wrapper {
@@ -50,7 +50,7 @@
     &::after {
       display: block;
       margin: 1.5rem auto 2rem auto;
-      background: #c39f76;
+      background: $twine;
       content: "";
       width: 75px;
       height: 2px;
