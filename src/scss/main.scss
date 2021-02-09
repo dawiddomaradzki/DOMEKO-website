@@ -36,6 +36,11 @@ body {
       background-image: url(../assets/img/Domeko_outside.jpg);
       background-size: cover;
       height: 100vh;
+      background-position: right;
+      @media (max-width: $mobile) {
+        background-image: url(../assets/img/Domeko_outside--mobile.png);
+        background-position: 53%;
+      }
     }
   }
 

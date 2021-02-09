@@ -7,6 +7,11 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    @media (max-width: $mobile) {
+      display: block;
+      text-align: center;
+      padding-top: 1rem;
+    }
   }
 
   &__logo {
@@ -19,6 +24,9 @@
   &__list {
     list-style-type: none;
     display: inline-flex;
+    @media (max-width: $mobile) {
+      display: inline-block;
+    }
   }
 
   &__link {

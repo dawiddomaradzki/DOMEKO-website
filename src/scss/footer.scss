@@ -6,6 +6,10 @@
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 2rem;
+    @media (max-width: $mobile) {
+      display: block;
+      text-align: center;
+    }
   }
 
   &__photoWrapper {
@@ -30,6 +34,10 @@
     font-size: 1.25rem;
     letter-spacing: 1.5px;
     margin-top: 0;
+    @media (max-width: $mobile) {
+      width: 150px;
+      margin: auto;
+    }
   }
 
   &__list {
@@ -41,11 +49,15 @@
     line-height: 2.5rem;
     padding-left: 2.5rem;
     position: relative;
+     @media (max-width: $mobile) {
+      width: 150px;
+      margin: auto;
+    }
   }
 
   &__hover {
     &:hover {
-       color: $twine;
+      color: $twine;
     }
   }
 
@@ -59,21 +71,18 @@
     &::before {
       background-image: url("../assets/icons/email.svg");
     }
-
   }
 
   &__facebook {
     &::before {
       background-image: url("../assets/icons/facebook.svg");
     }
-    
   }
 
   &__opening {
     &::before {
       background-image: url("../assets/icons/opening.svg");
     }
-
   }
 
   &__location {
@@ -106,6 +115,4 @@
       color: $twine;
     }
   }
-
-
 }
