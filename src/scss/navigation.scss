@@ -17,6 +17,10 @@
   &__logo {
     align-self: center;
     padding-left: 1.25rem;
+    @media (max-width: $mobile) {
+      padding: 0;
+    }
+   
   }
 }
 
@@ -25,7 +29,9 @@
     list-style-type: none;
     display: inline-flex;
     @media (max-width: $mobile) {
-      display: inline-block;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 0.5rem;
     }
   }
 
@@ -36,6 +42,10 @@
     font-size: 1.25rem;
     text-decoration: none;
     color: inherit;
+    @media (max-width: $mobile) {
+      padding: 0;
+  
+    }
 
     &:hover {
       color: $twine;

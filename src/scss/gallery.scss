@@ -7,6 +7,9 @@
 
 .gallery img {
   padding: 1rem;
+  @media (max-width: $mobile) {
+      padding: 0 0.5rem;
+    }
 }
 
 .gallery img:hover {
@@ -25,4 +28,5 @@
   background-image: url(../assets/img/8.png);
   background-image: url(../assets/img/9.png);
   background-image: url(../assets/img/10.png);
+  background-image: url(../assets/icons/favicon-16x16.png);
 }
