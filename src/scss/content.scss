@@ -25,11 +25,15 @@
   text-align: center;
   font-size: 2rem;
   font-weight: 400;
-  padding: 0 0 1rem;
+  padding: 0 0 1.5rem;
   border-bottom: 2px solid $twine;
 
   &__offer {
-    margin: 1rem 0 3rem;
+    margin-bottom: 3rem;
+    padding-top: 0;
+    @media (max-width: $mobile) {
+     padding-top: 1.5rem;
+    }
   }
 
   &__walk {
