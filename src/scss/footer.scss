@@ -5,10 +5,11 @@
   &__container {
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 2rem;
+    padding: 4rem 2rem 2rem;
     @media (max-width: $mobile) {
       display: block;
       text-align: center;
+      padding-top: 4.5rem;
     }
   }
 
@@ -37,6 +38,7 @@
     @media (max-width: $mobile) {
       width: 150px;
       margin: auto;
+      padding-top: 0.5rem;
     }
   }
 
