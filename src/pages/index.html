@@ -24,8 +24,7 @@
     <link rel="shortcut icon" href="favicon.ico" />
   </head>
   <body id="top">
-    <header class="header">
-      <div class="header__wrapper">
+    <!-- <div class="header__wrapper">
         <a class="header__logo" href="#top" title="top of site">
           <img src="../assets/img/Domeko_czarny32px.svg" alt="DOMEKO logo" />
         </a>
@@ -39,12 +38,47 @@
               <a href="#footer" class="navigation__link">KONTAKT</a>
             </li>
             <li class="navigation__list--element">
-              <a href="gallery.html" class="navigation__link">GALERIA</a>
+              <a href="gallery.html" class="navigation__link">PROJEKTY</a>
+              <ul>
+                <li><a href="#">WIZUALIZACJE</a></li>
+                <li><a href="#">REALIZACJE</a></li>
+                <li><a href="#">WIDEO</a></li>
+              </ul>
             </li>
           </ul>
         </nav>
-      </div>
-    </header>
+      </div> -->
+    <div class="navWrapper">
+      <nav>
+        <div>
+          <a class="navigationLogo" href="#top" title="domeko logo">
+            <img src="../assets/img/Domeko_czarny32px.svg" alt="DOMEKO logo" />
+          </a>
+        </div>
+
+        <ul class="navigationList">
+          <li class="navigationList__list">
+            <a class="navigationList__list--element" href="#">O nas</a>
+          </li>
+          <li class="navigationList__list">
+            <a class="navigationList__list--element" href="#content">Oferta</a>
+          </li>
+          <li class="navigationList__list">
+            <a class="navigationList__list--element" href="#footer">Kontakt</a>
+          </li>
+          <li class="navigationList__list">
+            <a class="navigationList__list--element" href="gallery.html"
+              >Projekty</a
+            >
+            <ul class="navigationList__list--dropdown">
+              <li><a href="#">Wizualizacje</a></li>
+              <li><a href="#">Realizacje</a></li>
+              <li><a href="#">Wideo</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
     <section class="imgSection">
       <div class="imgSection__wrapper">
@@ -118,7 +152,8 @@
             <h2 class="services__header">Wyposażenie wnętrz</h2>
             <p class="services__description">
               W salonie oferujemy również różnego rodzaju wyposażenie wnętrz
-              takich jak: kominki, armatura łazienkowa, materiały wykończeniowe, akcesoria remontowe i nie tylko!
+              takich jak: kominki, armatura łazienkowa, materiały wykończeniowe,
+              akcesoria remontowe i nie tylko!
             </p>
           </div>
         </div>
