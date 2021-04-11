@@ -20,7 +20,7 @@
 //     @media (max-width: $mobile) {
 //       padding: 0;
 //     }
-   
+
 //   }
 // }
 
@@ -28,7 +28,7 @@
 //   &__list {
 //     list-style-type: none;
 //     display: inline-flex;
-    
+
 //     @media (max-width: $mobile) {
 //       display: flex;
 //       justify-content: space-between;
@@ -46,7 +46,7 @@
 //     color: inherit;
 //     @media (max-width: $mobile) {
 //       padding: 0;
-  
+
 //     }
 
 //     &:hover {
@@ -59,65 +59,103 @@
   width: 100%;
 }
 
+.navigationLogo {
+  @media (max-width: $mobile) {
+    padding-top: 0.5rem;
+  }
+}
+
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 4rem;
   background-color: #ffffff;
+
+  @media (max-width: $mobile) {
+    height: 5rem;
+    flex-flow: column nowrap;
+  }
 }
 
 .navigationList {
   display: flex;
-  width: 50%;
+  width: 53%;
+
+  @media (max-width: $mobile) {
+    width: 100%;
+  }
 
   justify-content: space-around;
   &__list {
     position: relative;
-    // list-style: none;
     list-style-type: none;
 
-    &--element {
+    & a,
+    p {
       display: block;
       text-decoration: none;
       text-transform: uppercase;
       letter-spacing: 2px;
       font-weight: 700;
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       color: black;
       padding: 1.25rem 0.5rem;
-    }
+      cursor: pointer;
 
-    &--dropdown {
-      display: none;
-      position: absolute;
-      background-color: #ffffff;
-      list-style-type: none;
-      border-radius: 0rem 0rem 0.25rem 0.25rem;
-
-      & li {
-        border-radius: 0.25rem;
-      }
-
-      & li a {
-        display: block;
-        text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-weight: 700;
-        font-size: 1.25rem;
-        color: black;
-        padding: 1rem 0.5rem;
-        // margin: 0 0.5rem;
-      }
-
-      & li a:hover {
-        background-color: #f3f3f3;
+      @media (max-width: $mobile) {
+        padding: 0.5rem 0.4rem;
+        font-size: 0.9rem;
       }
     }
 
-    &:hover ul  {
+    & a:hover {
+      color: #c39f76;
+    }
+
+    & p:hover {
+      color: #c39f76;
+    }
+
+    &:hover ul {
+      opacity: 1;
+      transform: translateY(-5px);
+      pointer-events: all;
+    }
+  }
+
+  &__dropdown {
+    opacity: 0;
+    position: absolute;
+    background-color: #ffffff;
+    list-style-type: none;
+    border-radius: 0rem 0rem 0.25rem 0.25rem;
+    padding: 0.4rem 0.2rem;
+    transition: all 0.4s ease;
+    transform: translateY(0px);
+    pointer-events: none;
+
+    & li {
+      border-radius: 0.25rem;
+    }
+
+    & li a {
       display: block;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 700;
+      font-size: 1rem;
+      color: black;
+      padding: 1rem 0.5rem;
+      @media (max-width: $mobile) {
+        font-size: 0.7rem;
+        padding: 0.5rem 0.4rem;
+      }
+    }
+
+    & li a:hover {
+      background-color: #f3f3f3;
     }
   }
 }
