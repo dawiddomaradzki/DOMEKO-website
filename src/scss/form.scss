@@ -1,51 +1,66 @@
 .formSection {
-  padding: 4.5rem 2rem;
+  padding: 0 2rem 4.5rem;
   background: $whisper;
   color: $mineShaft;
+
+  &__wrapper {
+    padding-bottom: 1.5rem;
+  }
 }
 
-.formWrapper {
+.form {
   flex-direction: column;
   align-items: center;
   display: flex;
 }
 
-.form {
+.formWrapper {
   position: relative;
   width: 50%;
   height: 50px;
   overflow: hidden;
-}
 
-.form input {
-  width: 100%;
-  height: 100%;
-  padding-top: 20px;
-  color: black;
-  border: none;
-  outline: none;
-}
+  & input {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    color: black;
+    border: none;
+    outline: none;
+  }
 
-.form label {
-  position: absolute;
-  bottom: 0px;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  border-bottom: 1px solid black;
-}
+  & label {
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+  }
+  & label::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #c39f76;
+    left: 0px;
+    bottom: -1px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
 
-.form label::after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border-bottom: 3px solid #c39f76;
-  left: 0px;
-  bottom: -1px;
-  transform: translateX(-100%);
-  transition: transform 0.3s ease;
+  & input:focus + .labelName .contentName,
+  input:valid + .labelName .contentName {
+    transform: translateY(-150%);
+    color: #c39f76;
+    font-size: 14px;
+  }
+
+  & input:focus + .labelName::after,
+  input:valid + .labelName::after {
+    transform: translateX(0%);
+  }
 }
 
 .contentName {
@@ -53,16 +68,4 @@
   bottom: 5px;
   left: 0px;
   transition: all 0.3s ease;
-}
-
-.form input:focus + .labelName .contentName,
-.form input:valid + .labelName .contentName {
-  transform: translateY(-150%);
-  color: #c39f76;
-  font-size: 14px;
-}
-
-.form input:focus + .labelName::after,
-.form input:valid + .labelName::after {
-  transform: translateX(0%);
 }
