@@ -85,7 +85,7 @@ module.exports = {
       template: "./src/pages/gallery.html",
       inject: true,
       chunks: ["index", "gallery", "lightbox"],
-      filename: "gallery.html",
+      filename: "visualisation.html",
     }),
   ],
 };

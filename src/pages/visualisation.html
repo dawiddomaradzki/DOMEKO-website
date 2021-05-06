@@ -3,36 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DOMEKO: Galeria</title>
-    <link rel="shortcut icon" href="favicon.ico" />
+    <title>DOMEKO: Wizualizacje</title>
+    <link
+      rel=" shortcut icon"
+      href="favicon.ico"
+      type="image/x-icon"
+      sizes="16x16"
+    />
   </head>
-  <body>
-    <!-- <header class="header">
-      <div class="header__wrapper">
-        <a class="header__logo" href="index.html" title="top of site">
-          <img src="../assets/img/Domeko_czarny32px.svg" alt="DOMEKO logo" />
-        </a>
-
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__list--element">
-              <a href="index.html" class="navigation__link">DOMEKO</a>
-            </li>
-            <li class="navigation__list--element">
-              <a href="#footer" class="navigation__link">KONTAKT</a>
-            </li>
-            <li class="navigation__list--element">
-              <a href="gallery.html" class="navigation__link">PROJEKTY</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header> -->
+  <body id="top>
 
     <div class="navWrapper">
       <nav>
         <div class="navigationLogo">
-          <a href="index.html" title="domeko logo">
+          <a href="#top" title="domeko logo">
             <img src="../assets/img/Domeko_czarny32px.svg" alt="DOMEKO logo" />
           </a>
         </div>
@@ -48,10 +32,10 @@
             <a href="#footer">Kontakt</a>
           </li>
 
-          <li class="navigationList__list">
+          <li class="navigationList__list click">
             <p>Projekty <i class="fas fa-angle-down"></i></p>
-            <ul class="navigationList__dropdown">
-              <li><a href="#">Wizualizacje</a></li>
+            <ul class="navigationList__dropdown showup">
+              <li><a href="gallery.html">Wizualizacje</a></li>
               <li><a href="#">Realizacje</a></li>
               <li><a href="#">Wideo</a></li>
             </ul>
@@ -61,10 +45,10 @@
     </div>
 
     <section class="gallery">
-      <a href="img/2.27e901cd.png" data-lightbox="1">
+      <!-- <a href="img/2.27e901cd.png" data-lightbox="1">
         <img src="../assets/img/2S.png"
-      /></a>
-      <a href="img/3.13c1680f.png" data-lightbox="1">
+      /></a> -->
+      <!-- <a href="img/3.13c1680f.png" data-lightbox="1">
         <img src="../assets/img/3S.png"
       /></a>
       <a href="img/4.8772807b.png" data-lightbox="1">
@@ -163,13 +147,14 @@
       /></a>
       <a href="img/34.d45d3b8c.png" data-lightbox="1">
         <img src="../assets/img/34S.png"
-      /></a>
+      /></a> -->
     </section>
 
     <section class="footer" id="footer">
       <div class="footer__container">
         <article class="information">
           <h2 class="information__title">KONTAKT</h2>
+
           <ul class="information__list">
             <li class="information__element information__call">
               <a href="tel:+41 394 58 47" class="information__noStyle"
@@ -194,6 +179,7 @@
 
         <article class="information">
           <h2 class="information__title">GODZINY PRACY</h2>
+
           <ul class="information__list">
             <li class="information__element information__opening">
               pn-pt: 08:00 - 17:00
@@ -205,6 +191,7 @@
 
         <article class="information">
           <h2 class="information__title">LOKALIZACJA</h2>
+
           <ul class="information__list information__hover">
             <li class="information__element information__location">
               <a
@@ -236,3 +223,4 @@
     </section>
   </body>
 </html>
+
