@@ -13,6 +13,10 @@
     & textarea {
       padding: 1rem 0 0 1rem;
       width: 50%;
+
+      @media (max-width: $mobile) {
+        width: 75%;
+      }
     }
 
     & textarea:focus {
@@ -30,6 +34,11 @@
       font-weight: 500;
       background: #eeeeee;
       text-transform: uppercase;
+      @media (max-width: $mobile) {
+        width: 80%;
+        font-size: 1.25rem;
+        letter-spacing: 1.5px;
+      }
     }
 
     &--button:hover {
@@ -49,6 +58,10 @@
   width: 50%;
   height: 50px;
   overflow: hidden;
+
+  @media (max-width: $mobile) {
+    width: 80%;
+  }
 }
 
 .form input {
@@ -60,6 +73,7 @@
   outline: none;
   background: transparent;
   outline: none;
+  text-align: center;
 }
 
 .form label {
@@ -87,7 +101,7 @@
 .contentName {
   position: absolute;
   bottom: 5px;
-  left: 50%;
+  left: 0%;
   transition: all 0.3s ease;
 }
 

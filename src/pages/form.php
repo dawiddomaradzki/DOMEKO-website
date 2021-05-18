@@ -1,5 +1,5 @@
 <?php
-
+$message_sent = false;
 if(isset($_POST['email']) && $_POST['email'] !=''){
 
 if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
@@ -17,12 +17,13 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
 
 		mail($to,$messageSubject,$body);
 
+    $message_sent = true;
   }
 }
 
 ?>
 
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -88,48 +89,59 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
       </div>
     </section>
 
-    <section class="formSection">
-      <h1 class="headers">Napisz do nas!</h1>
-      <div class="formSection__wrapper">
-        <form class="contactForm" method="POST" action="form.php">
-          <input
-            type="text"
-            name="name"
-            class="contactForm__input"
-            placeholder="Your Name"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            class="contactForm__input"
-            placeholder="Your email"
-            required
-          />
-          <input
-            type="text"
-            name="subject"
-            class="contactForm__input"
-            placeholder="Topic"
-            required
-          />
+    <section class="formSection" id="footer">
+      <h1 class="headers headers__form">Napisz do nas!</h1>
 
+      <?php
+        if($message_sent):
+      ?>
+        <h2>Dziękujemy za wiadomość</h2>
+      <?php
+        else:
+      ?>
+      <form method="POST" action="form.php">
+        <div class="formSection__wrapper">
+          <div class="form">
+            <input type="text" name="name" required />
+            <label for="name" class="labelName"
+              ><span class="contentName">Name</span></label
+            >
+          </div>
+        </div>
+        <div class="formSection__wrapper">
+          <div class="form">
+            <input type="email" name="email" required />
+            <label for="email" class="labelName"
+              ><span class="contentName">Email</span></label
+            >
+          </div>
+        </div>
+        <div class="formSection__wrapper">
+          <div class="form">
+            <input type="text" name="subject" required />
+            <label for="subject" class="labelName"
+              ><span class="contentName">Temat</span></label
+            >
+          </div>
+        </div>
+        <div class="formSection__wrapper formSection__textarea">
           <textarea
             name="message"
-            placeholder="message"
-            class="contactForm__input"
+            placeholder="Wiadomość"
+            cols="30"
             rows="10"
             required
           ></textarea>
-
-          <button
-            type="submit"
-            class="contactForm__input contactForm__input--submit"
-          >
-            Wyślij Wiadomość
-            </button>
-        </form>
-      </div>
+        </div>
+        <div class="formSection__wrapper">
+          <button type="submit" class="formSection__wrapper--button">
+            Wyślij wiadomość
+          </button>
+        </div>
+      </form>
+      <?php
+      endif;
+      ?>
     </section>
 
     <section class="footer" id="footer">
