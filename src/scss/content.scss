@@ -1,7 +1,7 @@
 .content {
   background: $whisper;
   color: $mineShaft;
-  padding: 4rem 2rem;
+  padding: 4rem 2rem 0;
 
   &__offer {
     display: grid;
@@ -28,7 +28,12 @@
   }
 
   &__walk {
-    margin: 4rem 0 3rem;
+    margin: 4rem 0;
+  }
+
+  &__form {
+    margin: 0;
+    padding-top: 4rem;
   }
 }
 

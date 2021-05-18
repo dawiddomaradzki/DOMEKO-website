@@ -16,7 +16,7 @@
 
     <link
       rel=" shortcut icon"
-      href="favicon.ico"
+      href="favicon-32x32.png"
       type="image/x-icon"
       sizes="16x16"
     />
@@ -51,7 +51,7 @@
             <p>Projekty <i class="fas fa-angle-down"></i></p>
             <ul class="navigationList__dropdown showup">
               <li><a href="gallery.html">Wizualizacje</a></li>
-              <li><a href="#">Realizacje</a></li>
+              <li><a href="realized.html">Realizacje</a></li>
               <li><a href="#">Wideo</a></li>
             </ul>
           </li>
@@ -156,20 +156,52 @@
       </article>
     </section>
 
-    <!-- <section class="formSection">
-      <h1 class="headers">Napisz do nas!</h1>
-      <div class="formSection__wrapper">
-        <div class="form">
-          <div class="formWrapper">
-            <input type="text" name="name" autocomplete="off" required />
-            <label for="name" class="labelName">
-              <span class="contentName">Imię i Nazwisko</span></label
+    <section class="formSection" id="footer">
+      <h1 class="headers headers__form">Napisz do nas!</h1>
+
+      <form method="POST" action="">
+        <div class="formSection__wrapper">
+          <div class="form">
+            <input type="text" name="name" required />
+            <label for="name" class="labelName"
+              ><span class="contentName">Name</span></label
             >
           </div>
         </div>
-      </div> -->
+        <div class="formSection__wrapper">
+          <div class="form">
+            <input type="email" name="email" required />
+            <label for="email" class="labelName"
+              ><span class="contentName">Email</span></label
+            >
+          </div>
+        </div>
+        <div class="formSection__wrapper">
+          <div class="form">
+            <input type="text" name="subject" required />
+            <label for="subject" class="labelName"
+              ><span class="contentName">Temat</span></label
+            >
+          </div>
+        </div>
+        <div class="formSection__wrapper formSection__textarea">
+          <textarea
+            name="message"
+            placeholder="Wiadomość"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
+        </div>
+        <div class="formSection__wrapper">
+          <button type="submit" class="formSection__wrapper--button">
+            Wyślij wiadomość
+          </button>
+        </div>
+      </form>
+    </section>
 
-    <section class="footer" id="footer">
+    <section class="footer">
       <div class="footer__container">
         <article class="information">
           <h2 class="information__title">KONTAKT</h2>

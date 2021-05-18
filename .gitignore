@@ -1,3 +1,5 @@
 node_modules
 .DS_Store
 dist
+src/assets/img/realized
+src/assets/img/visualisation

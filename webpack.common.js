@@ -85,7 +85,20 @@ module.exports = {
       template: "./src/pages/gallery.html",
       inject: true,
       chunks: ["index", "gallery", "lightbox"],
-      filename: "visualisation.html",
+      filename: "gallery.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/realized.html",
+      inject: true,
+      chunks: ["index", "gallery", "lightbox"],
+      filename: "realized.html",
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/pages/form.php",
+      inject: true,
+      chunks: ["index"],
+      filename: "form.php",
     }),
   ],
 };
