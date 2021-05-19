@@ -89,17 +89,100 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
       </div>
     </section>
 
-    <section class="formSection" id="footer">
-      <h1 class="headers headers__form">Napisz do nas!</h1>
+    <section class="content" id="content">
+      <h1 class="headers headers__offer">W salonie oferujemy</h1>
+      <article class="content__offer">
+        <div class="services">
+          <div class="services__wrapper">
+            <img
+              src="../assets/img/slab.png"
+              alt="slab"
+              class="services__image"
+            />
+            <h2 class="services__header">Płytki</h2>
+            <p>
+              Salon Domeko posiada w ofercie szeroką gamę płytek w wielu
+              formatach oraz wzorach odpowiadających nowoczesnym trendom. Nasze
+              płytki to produkty najwyższej jakości producentów z wieloletnim
+              doświadczeniem na rynku.
+            </p>
+          </div>
+        </div>
+        <div class="services">
+          <div class="services__wrapper">
+            <img
+              src="../assets/img/visualization.png"
+              alt="visualisation"
+              class="services__image"
+            />
+            <h2 class="services__header">Wizualizacje łazienek</h2>
+            <p>
+              Wykonujemy wizualizacje łazienek na życzenie klienta. Dzięki nim w
+              łatwy sposób wyobrazisz sobie, jak dobrane przez nas komponenty
+              będą ze sobą współgrać w końcowym projekcie.
+            </p>
+          </div>
+        </div>
+        <div class="services">
+          <div class="services__wrapper">
+            <img
+              src="../assets/img/door.png"
+              alt="door"
+              class="services__image"
+            />
+            <h2 class="services__header">Okna i drzwi</h2>
+            <p>
+              W naszym salonie znajdą Państwo wiele modeli okien oraz drzwi
+              zarówno tych zawnętrznych jak i wewnętrznych. Oferujemy również
+              ich transport i montaż u klienta.
+            </p>
+          </div>
+        </div>
+        <div class="services">
+          <div class="services__wrapper">
+            <img
+              src="../assets/img/budowlanka.png"
+              alt="fireplace"
+              class="services__image"
+            />
+            <h2 class="services__header">Artykuły budowlane</h2>
+            <p>
+              W salonie posiadamy studio Dekoral, które pozwoli na dobór oraz
+              wymieszanie wybranych tynków i farb. Oferujemy również różnego
+              rodzaju wyposażenie wnętrz oraz artykuły budowalne takie jak:
+              armatura łazienkowa, materiały wykończeniowe, akcesoria remontowe
+              i nie tylko!
+            </p>
+          </div>
+        </div>
+      </article>
 
+      <h1 class="headers headers__walk">Wirtualny spacer po naszym salonie</h1>
+      <article>
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!4v1620040265795!6m8!1m7!1sCAoSLEFGMVFpcE00bmpURnMtZldWMmExS3A3SU9PZzlZbmlaRUJPZzNPM2ExR3l4!2m2!1d50.85807401677135!2d19.96952223984931!3f317.84689402229503!4f-14.190888564753095!5f0.7820865974627469"
+            width="100%"
+            height="600"
+            style="border: 1px solid black"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </article>
+    </section>
+
+    <section class="formSection">
+    
       <?php
         if($message_sent):
       ?>
-        <h2>Dziękujemy za wiadomość</h2>
+        <h2 class="formSection__header">Dziękujemy za wiadomość!</h2>
       <?php
         else:
       ?>
-      <form method="POST" action="form.php">
+      <h1 class="headers headers__form">Napisz do nas!</h1>
+      <form method="POST" action="form.php#footer">
         <div class="formSection__wrapper">
           <div class="form">
             <input type="text" name="name" required />
