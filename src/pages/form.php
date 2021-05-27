@@ -13,7 +13,7 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
 
 		$body .= "Od: ".$userName. "\r\n";
 		$body .= "Email: ".$userEmail. "\r\n";
-		$body .= "Wiadomość: ".$message. "\r\n";
+		$body .= "Wiadomosc: ".$message. "\r\n";
 
 		mail($to,$messageSubject,$body);
 
@@ -55,14 +55,14 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
     <div class="navWrapper">
       <nav>
         <div class="navigationLogo">
-          <a href="index.html" title="domeko logo">
+          <a href="index.html" title="Domeko">
             <img src="img/Domeko_czarny32px.2599e721.svg" alt="DOMEKO logo" />
           </a>
         </div>
 
         <ul class="navigationList">
           <li class="navigationList__list">
-            <a href="#">O nas</a>
+            <a href="#about">O nas</a>
           </li>
           <li class="navigationList__list">
             <a href="#content">Oferta</a>
@@ -87,6 +87,14 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
       <div class="imgSection__wrapper">
         <div class="imgSection__wrapper--image"></div>
       </div>
+      <article class="imgSection__article" id="about">
+        <h2>Domeko</h2>
+        <p>
+          Jesteśmy centrum budowlanym zlokalizowanym we Włoszczowie. Dzięki
+          szerokiej gamie produktów oraz kadrze doświadczonych pracowników,
+          wspólnie urządzimy wymarzone wnętrze Twojego domu.
+        </p>
+      </article>
     </section>
 
     <section class="content" id="content">
@@ -95,13 +103,13 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
         <div class="services">
           <div class="services__wrapper">
             <img
-              src="../assets/img/slab.png"
+              src="img/slab.b0a52537.png"
               alt="slab"
               class="services__image"
             />
             <h2 class="services__header">Płytki</h2>
             <p>
-              Salon Domeko posiada w ofercie szeroką gamę płytek w wielu
+              Posiadamy w ofercie szeroką gamę płytek w wielu
               formatach oraz wzorach odpowiadających nowoczesnym trendom. Nasze
               płytki to produkty najwyższej jakości producentów z wieloletnim
               doświadczeniem na rynku.
@@ -111,7 +119,7 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
         <div class="services">
           <div class="services__wrapper">
             <img
-              src="../assets/img/visualization.png"
+              src="img/visualization.900c168c.png"
               alt="visualisation"
               class="services__image"
             />
@@ -126,7 +134,7 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
         <div class="services">
           <div class="services__wrapper">
             <img
-              src="../assets/img/door.png"
+              src="img/door.d2e58f95.png"
               alt="door"
               class="services__image"
             />
@@ -141,7 +149,7 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
         <div class="services">
           <div class="services__wrapper">
             <img
-              src="../assets/img/budowlanka.png"
+              src="img/budowlanka.1c69b1f9.png"
               alt="fireplace"
               class="services__image"
             />
@@ -172,22 +180,22 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
       </article>
     </section>
 
-    <section class="formSection">
+    <section class="formSection" id="thanks">
     
       <?php
         if($message_sent):
       ?>
-        <h2 class="formSection__header">Dziękujemy za wiadomość!</h2>
+        <h2  class="formSection__header">Dziękujemy za wiadomość!</h2>
       <?php
         else:
       ?>
       <h1 class="headers headers__form">Napisz do nas!</h1>
-      <form method="POST" action="form.php#footer">
+      <form method="POST" action="form.php#thanks">
         <div class="formSection__wrapper">
           <div class="form">
             <input type="text" name="name" required />
             <label for="name" class="labelName"
-              ><span class="contentName">Name</span></label
+              ><span class="contentName">Imię</span></label
             >
           </div>
         </div>
