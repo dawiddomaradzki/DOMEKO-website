@@ -55,28 +55,28 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
     <div class="navWrapper">
       <nav>
         <div class="navigationLogo">
-          <a href="index.html" title="Domeko">
+          <a href="index.html" title="Domeko" rel="nofollow noreferrer">
             <img src="img/Domeko_czarny32px.2599e721.svg" alt="DOMEKO logo" />
           </a>
         </div>
 
         <ul class="navigationList">
           <li class="navigationList__list">
-            <a href="#about">O nas</a>
+            <a href="#about" rel="nofollow noreferrer">O nas</a>
           </li>
           <li class="navigationList__list">
-            <a href="#content">Oferta</a>
+            <a href="#content" rel="nofollow noreferrer">Oferta</a>
           </li>
           <li class="navigationList__list">
-            <a href="#footer">Kontakt</a>
+            <a href="#footer" rel="nofollow noreferrer">Kontakt</a>
           </li>
 
           <li class="navigationList__list click">
             <p>Projekty <i class="fas fa-angle-down"></i></p>
             <ul class="navigationList__dropdown showup">
-              <li><a href="gallery.html">Wizualizacje</a></li>
-              <li><a href="realized.html">Realizacje</a></li>
-              <li><a href="#">Wideo</a></li>
+              <li><a href="gallery.html" rel="nofollow noreferrer">Wizualizacje</a></li>
+              <li><a href="realized.html" rel="nofollow noreferrer">Realizacje</a></li>
+              <li><a href="#" rel="nofollow noreferrer">Wideo</a></li>
             </ul>
           </li>
         </ul>
@@ -243,12 +243,12 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
           <ul class="information__list">
             <li class="information__element information__call">
               <a href="tel:+41 394 58 47" class="information__noStyle"
-                >+41 394 58 47</a
+                rel="nofollow noreferrer">+41 394 58 47</a
               >
             </li>
             <li class="information__element information__email">
               <a href="mailto:info@domeko.eu" class="information__noStyle"
-                >info@domeko.eu</a
+                rel="nofollow noreferrer">info@domeko.eu</a
               >
             </li>
             <li class="information__element information__facebook">
@@ -256,6 +256,7 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
                 href="https://www.facebook.com/Domeko-W%C5%82oszczowa-564951136912778/"
                 target="blank"
                 class="information__noStyle"
+                rel="nofollow noreferrer"
                 >facebook</a
               >
             </li>
@@ -283,6 +284,7 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
                 href="https://goo.gl/maps/fjd2s9bmYHuYsVnN9"
                 target="blank"
                 class="information__noStyle"
+                rel="nofollow noreferrer"
                 >ul. Przedborska 45</a
               >
             </li>
@@ -291,6 +293,7 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
                 href="https://goo.gl/maps/fjd2s9bmYHuYsVnN9"
                 target="blank"
                 class="information__noStyle"
+                rel="nofollow noreferrer"
                 >29-100 Włoszczowa</a
               >
             </li>

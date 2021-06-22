@@ -32,19 +32,33 @@ body {
 
 .imgSection {
   &__wrapper {
+    height: 100vh;
+    position: relative;
+
+    // &--image {
+    //   background-image: url(../assets/img/Domeko_outside.jpg);
+    //   background-size: cover;
+    //   height: 100vh;
+    //   // width: auto;
+    //   // width: 100vw;
+    //   // background-position: center;
+    //   @media (max-width: $mobile) {
+    //     background-image: url(../assets/img/Domeko_outside.jpg);
+    //     // background-position: 53%;
+    //   }
+    // }
+  }
+
+  &__slideshowImg {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-
-    &--image {
-      background-image: url(../assets/img/Domeko_outside.jpg);
-      background-size: cover;
-      height: 100vh;
-      background-position: right;
-      @media (max-width: $mobile) {
-        background-image: url(../assets/img/Domeko_outside--mobile.jpg);
-        background-position: 53%;
-      }
-    }
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
   }
 
   &__article {
