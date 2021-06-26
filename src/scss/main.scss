@@ -1,5 +1,4 @@
 @import "~normalize.css";
-
 @import "_variables";
 @import "navigation.scss";
 @import "content.scss";
@@ -34,19 +33,6 @@ body {
   &__wrapper {
     height: 100vh;
     position: relative;
-
-    // &--image {
-    //   background-image: url(../assets/img/Domeko_outside.jpg);
-    //   background-size: cover;
-    //   height: 100vh;
-    //   // width: auto;
-    //   // width: 100vw;
-    //   // background-position: center;
-    //   @media (max-width: $mobile) {
-    //     background-image: url(../assets/img/Domeko_outside.jpg);
-    //     // background-position: 53%;
-    //   }
-    // }
   }
 
   &__slideshowImg {
@@ -58,7 +44,7 @@ body {
     object-fit: cover;
     z-index: -1;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 1.5s ease-in-out;
   }
 
   &__article {

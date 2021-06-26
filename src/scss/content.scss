@@ -34,9 +34,6 @@
   &__form {
     margin: 0;
     padding-top: 4rem;
-    // @media (max-width: $mobile) {
-    //   padding-top: 6rem;
-    // }
   }
 }
 
@@ -51,7 +48,6 @@
   &__image {
     @media (max-width: $mobile) {
       width: 80%;
-      // height: 80%;
     }
   }
 

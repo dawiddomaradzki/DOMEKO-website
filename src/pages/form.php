@@ -8,7 +8,7 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
 		$messageSubject = $_POST['subject'];
 		$message = $_POST['message'];
 
-		$to = "test@domeko.nazwa.pl";
+		$to = "info@domeko.eu";
 		$body = "";
 
 		$body .= "Od: ".$userName. "\r\n";
@@ -72,11 +72,11 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
           </li>
 
           <li class="navigationList__list click">
-            <p>Projekty <i class="fas fa-angle-down"></i></p>
+            <p>Galeria <i class="fas fa-angle-down"></i></p>
             <ul class="navigationList__dropdown showup">
               <li><a href="gallery.html" rel="nofollow noreferrer">Wizualizacje</a></li>
               <li><a href="realized.html" rel="nofollow noreferrer">Realizacje</a></li>
-              <li><a href="#" rel="nofollow noreferrer">Wideo</a></li>
+              <li><a href="#" rel="nofollow noreferrer">Asortyment</a></li>
             </ul>
           </li>
         </ul>

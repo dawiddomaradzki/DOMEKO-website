@@ -100,5 +100,12 @@ module.exports = {
       chunks: ["index"],
       filename: "form.php",
     }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/pages/assortment.html",
+      inject: true,
+      chunks: ["index", "gallery", "lightbox"],
+      filename: "assortment.html",
+    }),
   ],
 };
