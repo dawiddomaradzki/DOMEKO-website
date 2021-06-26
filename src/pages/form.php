@@ -62,7 +62,7 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
 
         <ul class="navigationList">
           <li class="navigationList__list">
-            <a href="#about" rel="nofollow noreferrer">O nas</a>
+            <a href="about.html" rel="nofollow noreferrer">O nas</a>
           </li>
           <li class="navigationList__list">
             <a href="#content" rel="nofollow noreferrer">Oferta</a>
@@ -76,7 +76,7 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
             <ul class="navigationList__dropdown showup">
               <li><a href="gallery.html" rel="nofollow noreferrer">Wizualizacje</a></li>
               <li><a href="realized.html" rel="nofollow noreferrer">Realizacje</a></li>
-              <li><a href="#" rel="nofollow noreferrer">Asortyment</a></li>
+              <li><a href="assortment.html" rel="nofollow noreferrer">Asortyment</a></li>
             </ul>
           </li>
         </ul>

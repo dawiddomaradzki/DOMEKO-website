@@ -107,5 +107,12 @@ module.exports = {
       chunks: ["index", "gallery", "lightbox"],
       filename: "assortment.html",
     }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/pages/about.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "about.html",
+    }),
   ],
 };
