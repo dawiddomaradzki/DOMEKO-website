@@ -56,7 +56,7 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
       <nav>
         <div class="navigationLogo">
           <a href="index.html" title="Domeko" rel="nofollow noreferrer">
-            <img src="img/Domeko_czarny32px.2599e721.svg" alt="DOMEKO logo" />
+            <img src="img/Domeko_czarny32px.2599e721.svg" alt="DOMEKO" />
           </a>
         </div>
 
