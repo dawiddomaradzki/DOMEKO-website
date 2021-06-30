@@ -7,6 +7,7 @@ module.exports = {
     index: "./src/js/index.js",
     gallery: "./src/js/gallery.js",
     lightbox: "./src/js/lightbox-plus-jquery.min.js",
+    slideshow: "./src/js/slideshow.js",
   },
   output: {
     filename: "[name].[hash:8].js",
@@ -78,7 +79,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/index.html",
       inject: true,
-      chunks: ["index"],
+      chunks: ["index", "slideshow"],
       filename: "index.html",
     }),
     new HtmlWebpackPlugin({
@@ -97,7 +98,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/form.php",
       inject: true,
-      chunks: ["index"],
+      chunks: ["index", "slideshow"],
       filename: "form.php",
     }),
 
@@ -111,7 +112,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/about.html",
       inject: true,
-      chunks: ["index"],
+      chunks: ["index", "slideshow"],
       filename: "about.html",
     }),
   ],
