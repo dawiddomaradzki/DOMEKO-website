@@ -42,13 +42,12 @@ body {
     padding: 2rem 2.5rem;
     background-color: rgba(0, 0, 0, 0.85);
     margin: 3rem 2rem 0;
-    color: wheat;
+    color: $white;
 
     @media (max-width: $mobile) {
       border-radius: 0;
       padding: 2rem 0.2rem 0;
       height: 100vh;
-      color: wheat;
       margin: 0;
       display: flex;
       flex-flow: column;
@@ -59,7 +58,6 @@ body {
       border-radius: 0;
       padding: 4rem 0.2rem 0;
       height: 100vh;
-      color: wheat;
       margin: 0;
       display: flex;
       flex-flow: column;

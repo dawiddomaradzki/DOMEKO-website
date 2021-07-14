@@ -84,17 +84,35 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
     </div>
 
     <section class="imgSection">
-      <div class="imgSection__wrapper">
-        <div class="imgSection__wrapper--image"></div>
-      </div>
-      <article class="imgSection__article" id="about">
-        <h2>Domeko</h2>
-        <p>
-          Jesteśmy centrum budowlanym zlokalizowanym we Włoszczowie. Dzięki
-          szerokiej gamie produktów oraz kadrze doświadczonych pracowników,
-          wspólnie urządzimy wymarzone wnętrze Twojego domu.
-        </p>
-      </article>
+      <header>
+        <div class="imgSection__wrapper">
+          <img
+            src="../assets/img/front.png"
+            alt=""
+            class="imgSection__slideshowImg"
+          />
+          <img
+            src="../assets/img/00.jpg"
+            alt=""
+            class="imgSection__slideshowImg"
+          />
+          <img
+            src="../assets/img/1.png"
+            alt=""
+            class="imgSection__slideshowImg"
+          />
+          <img
+            src="../assets/img/2.png"
+            alt=""
+            class="imgSection__slideshowImg"
+          />
+          <img
+            src="../assets/img/3.png"
+            alt=""
+            class="imgSection__slideshowImg"
+          />
+        </div>
+      </header>
     </section>
 
     <section class="content" id="content">
