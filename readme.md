@@ -1,7 +1,7 @@
 
 # DOMEKO Salon Łazienek
 
-Strona salonu łazienek w trakcie realizacji
+Strona salonu łazienek zlokalizowanego we włoszczowie
 
 
 
