@@ -20,7 +20,7 @@
     grid-template-columns: 1fr 1fr;
     background: $gallery;
 
-    @media (max-width: 1400px) {
+    @media (max-width: 1000px) {
       grid-template-columns: 1fr;
     }
 
@@ -48,6 +48,11 @@
       & h2 {
         font-weight: 500;
         padding: 2rem 0 3rem;
+      }
+      @media (max-width: $mobile) {
+        & h2 {
+          padding: 1rem 0;
+        }
       }
     }
 
